@@ -25,13 +25,13 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch(position){
                     case 0:
-                        if (spnYesNo == "Yes"){
-                            String spinnerItems;
+                        if (spnYesNo.getSelectedItem() == "Yes"){
+                            spnYesNo.getSelectedItem().toString();
                         }
                         break;
                     case 1:
-                        if (spnYesNo == "No"){
-
+                        if (spnYesNo.getSelectedItem() == "No"){
+                            spnYesNo.getSelectedItem().toString();
                         }
                         break;
                 }
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-        };
+        });
     }
 
 

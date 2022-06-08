@@ -19,29 +19,32 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         spnYesNo = findViewById(R.id.spinner);
         tv = findViewById(R.id.textView);
+
+        spnYesNo.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                switch(position){
+                    case 0:
+                        if (spnYesNo == "Yes"){
+                            String spinnerItems;
+                        }
+                        break;
+                    case 1:
+                        if (spnYesNo == "No"){
+
+                        }
+                        break;
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent){
+
+            }
+
+        };
     }
 
-    spnYesNo.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-        @Override
-        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            switch(position){
-                case 0:
-                    if (spnYesNo == "Yes"){
-                        String spinnerItems
-                    }
-                    break;
-                case 1:
-                    if (spnYesNo == "No"){
 
-                    }
-                    break;
-            }
-        }
 
-        @Override
-        public void onNothingSelected(AdapterView<?> parent){
-
-        }
-
-    };
 }

@@ -26,12 +26,14 @@ public class MainActivity extends AppCompatActivity {
                 switch(position){
                     case 0:
                         if (spnYesNo.getSelectedItem() == "Yes"){
-                            spnYesNo.getSelectedItem().toString();
+                              spnYesNo.getSelectedItem().toString();
+                              tv.setText((CharSequence) spnYesNo);
                         }
                         break;
                     case 1:
                         if (spnYesNo.getSelectedItem() == "No"){
                             spnYesNo.getSelectedItem().toString();
+                            tv.setText((CharSequence) spnYesNo);
                         }
                         break;
                 }
